@@ -1,0 +1,37 @@
+1. scenario: Posting a new post on Instagram
+Given user has access to Instagram application
+And user is logged into the account
+When User click the "New Post" button
+And User select an image to upload
+And User enters caption and tags for the picture
+Then the image should be posted to the Instagram profile
+
+2. scenario: Checking bank account balance on Chase
+Given User is logged into the Chase account
+When user clicks on "Accounts" tab
+And user select checking account
+Then user should be able to see balance on the account
+
+3. Scenario: Posting a new vide on YouTube
+
+Given user has access to Youtube and logged into Youtube account
+When user clicks upload button
+And user selects a video to upload
+And user enters title for the video and description for the video as long as tags
+And user clicks "Publish" button
+Then video should be uploaded to the user's YouTube channel
+
+4. Scenario: searching restaurant on yelp
+Given user should be logged into Yelp homepage
+When user enters location and searches for restaurant
+And user selects a restaurant from the list
+Then user should be able to see details, reviews etc. about the restaurant
+
+5. Scenario: craeting a Spotify playlist
+Given user should be able to access Spotify application and log into account
+When user clicks on "New Playlist" button
+And enters a name for the playlist
+And searches songs and adds them in the playlist
+And user clicks "save" button
+Then the new playlist should be created with the added songs and saved to the account
+
